@@ -43,10 +43,10 @@ const BagsDesigns = () => {
         </div>
 
         <div className=" absolute right-40 flex gap-4">
-          <div className="flex justify-center items-center w-8 h-8 bg-gray-200 text-gray-700 rounded-full shadow-sm cursor-pointer hover:bg-gray-300 border-[1px] border-[#000000]">
+          <div className="flex justify-center items-center w-8 h-8 bg-custom-gray text-gray-700 rounded-full shadow-sm cursor-pointer hover:bg-gray-300 border-[1px] border-[#000000]">
             <IoIosArrowBack size={12} className="text-black" />
           </div>
-          <div className="flex justify-center items-center w-8 h-8 bg-gray-200 text-gray-700 rounded-full shadow-md cursor-pointer hover:bg-gray-300 border-[1px] border-black">
+          <div className="flex justify-center items-center w-8 h-8 bg-custom-gray text-gray-700 rounded-full shadow-md cursor-pointer hover:bg-gray-300 border-[1px] border-black">
             <IoIosArrowForward size={12} className="text-black" />
           </div>
         </div>

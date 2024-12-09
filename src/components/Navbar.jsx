@@ -25,13 +25,13 @@ const Navbar = () => {
   return (
     <nav className="bg-custom-darkblue shadow-xl px-5 md:px-28">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between w-full">
-        
+
         <div className="flex flex-col items-center text-custom-white space-x-4">
           <img src="/images/Logo.png" alt="Logo" className="h-8" />
           <p className="uppercase text-custom-yellow">Heart Hacker</p>
         </div>
 
-       
+
         <div className="hidden md:flex flex-grow text-custom-white justify-center items-center space-x-8 text-gray-200 font-semibold">
           {menuItems.map((item) => (
             <div
@@ -77,6 +77,15 @@ const Navbar = () => {
               {item}
             </div>
           ))}
+          <div className="hidden md:block text-md font-semibold text-gray-200 cursor-pointer hover:text-white transition">
+            About us
+          </div>
+
+          <div className="flex  space-x-2 text-gray-200   ">
+            <FaSearch className="text-xl hidden md:block lg:block cursor-pointer hover:text-white transition" />
+            <FaUser className="text-xl hidden md:block lg:block cursor-pointer hover:text-white transition" />
+            <FaShoppingCart className="text-xl hidden md:block lg:block cursor-pointer hover:text-white transition" />
+          </div>
         </div>
       )}
     </nav>

@@ -17,29 +17,32 @@ const Herosection = () => {
 
         <div className="bg-custom-lightblue">
 
-            <div className="relative h-screen w-[80%] mx-auto"
+            <div
+                className="relative h-screen w-full sm:w-[90%] lg:w-[80%] mx-auto"
                 style={{
                     backgroundImage: 'url(images/TrolleyBag2.jpg)',
                     backgroundSize: 'cover',
-                    backgroundPosition: 'center'
+                    backgroundPosition: 'center',
                 }}
             >
+                {/* Overlay */}
                 <div className="absolute inset-0 bg-black opacity-50"></div>
 
-                <div className="relative z-10 flex flex-col text-custom-white justify-end items-center h-full text-center text-white">
-                    <h1 className="text-3xl sm:text-6xl text-center lg:text-4xl uppercase ">
+                {/* Content */}
+                <div className="relative z-10 flex flex-col text-custom-white justify-end items-center h-full text-center px-4 sm:px-6 lg:px-8">
+                    <h1 className="text-2xl sm:text-4xl lg:text-3xl font-bold uppercase mb-2">
                         Because Every Heart Deserves
                     </h1>
 
-                    <p className="lg:text-5xl sm:text-xl md:text-2xl max-w-3xl uppercase mb-2">
+                    <p className="text-lg sm:text-xl lg:text-4xl max-w-3xl uppercase mb-4 font-bold">
                         Happiness
                     </p>
-                    <p className="uppercase lg:text-4xl sm:text-xl md:text-2xl max-w-3xl mb-10">
+                    <p className="text-md font-semibold sm:text-lg lg:text-3xl max-w-3xl uppercase mb-8">
                         Choose HeartHacker Gifts
                     </p>
                 </div>
-
             </div>
+
         </div>
     </>)
 }
