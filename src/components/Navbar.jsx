@@ -28,7 +28,7 @@ const Navbar = () => {
 
         <div className="flex flex-col items-center text-custom-white space-x-4">
           <img src="/images/Logo.png" alt="Logo" className="h-8" />
-          <p className="uppercase text-custom-yellow">Heart Hacker</p>
+          <p className="uppercase text-custom-golden">Heart Hacker</p>
         </div>
 
 

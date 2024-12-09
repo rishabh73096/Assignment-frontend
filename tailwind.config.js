@@ -12,7 +12,8 @@ export default {
       "custom-white":"#ffffff",
       "custom-red":"#ff0066",
       "custom-yellow":"#ffff00",
-      "custom-gray":"#d3d3d3"
+      "custom-gray":"#d3d3d3",
+      "custom-golden":"#ffb366"
     }
   },
   plugins: [],
