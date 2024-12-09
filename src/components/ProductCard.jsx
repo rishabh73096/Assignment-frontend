@@ -1,4 +1,4 @@
-// 
+
 const ProductCard = ({ image, productName, price, discountPercentage }) => {
     const discountedPrice = price - (price * discountPercentage / 100);
     return (
@@ -14,7 +14,7 @@ const ProductCard = ({ image, productName, price, discountPercentage }) => {
                     className=" w-[300px] h-56 rounded-lg object-cover mb-4"
                 />
 
-                {/* Product Details */}
+               
                 <div className="px-4 ">
                     <h3 className="text-center text-[12px] font-semibold text-gray-800">{productName}</h3>
                     <div className="flex items-center justify-center gap-2 mt-2 ">

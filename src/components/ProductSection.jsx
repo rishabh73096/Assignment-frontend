@@ -10,7 +10,7 @@ const ProductSection = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await fetch('http://localhost:3800/api');
+                const response = await fetch('https://assignment-backend-zsag.onrender.com/api');
                 if (!response.ok) {
                     throw new Error('Failed to fetch products');
                 }
