@@ -10,17 +10,16 @@ const ProductSection = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await fetch('http://localhost:3800/api');
+                const response = await fetch('http://localhost:3800/api/items');
                 if (!response.ok) {
                     throw new Error('Failed to fetch products');
                 }
                 const data = await response.json();
-                console.log("Data ::", data);
-                setProducts(data);  // Assuming the API returns an array of products
+                setProducts(data); 
             } catch (error) {
-                setError(error.message);  // Set error message if fetching fails
+                setError(error.message); 
             } finally {
-                setLoading(false);  // Loading is false after the fetch is complete
+                setLoading(false); 
             }
         };
 
@@ -28,15 +27,15 @@ const ProductSection = () => {
     }, []);
 
     const handleViewAllClick = () => {
-        setVisibleProducts(products.length);  // Show all products
+        setVisibleProducts(products.length); 
     };
 
     if (loading) {
-        return <div>Loading...</div>;  // Show loading message or spinner while fetching data
+        return <div>Loading...</div>;  
     }
 
     if (error) {
-        return <div>Error: {error}</div>;  
+        return <div>Error: {error}</div>;
     }
 
     return (
@@ -53,7 +52,7 @@ const ProductSection = () => {
 
 
             <div className="w-[80%] mx-auto p-6">
-                
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
                     {products.slice(0, visibleProducts).map((product, index) => (
                         <ProductCard
@@ -61,7 +60,7 @@ const ProductSection = () => {
                             image={product.image}
                             productName={product.productName}
                             price={product.price}
-                            discountPercentage={product.discountPercentage}
+                            discountedPercentage={product.discountedPercentage}
                         />
                     ))}
                 </div>
