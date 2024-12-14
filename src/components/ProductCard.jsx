@@ -1,6 +1,11 @@
 
+<<<<<<< HEAD
 const ProductCard = ({ image, productName, price, discountedPercentage }) => {
     const discountedPrice = price - (price * discountedPercentage / 100);
+=======
+const ProductCard = ({ image, productName, price, discountPercentage }) => {
+    const discountedPrice = price - (price * discountPercentage / 100);
+>>>>>>> cfa521c38994e8131aff6f31f8b2a8d42a1ff0af
     return (
         <>
 
